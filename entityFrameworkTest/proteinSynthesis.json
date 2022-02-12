@@ -1,0 +1,153 @@
+{
+
+  "data": [
+    {
+      "id": 1,
+      "order": "lowoxigen",
+      "detail": [
+        {
+          "proteinType": "hemoglobuline",
+          "subcomponents": [
+            {
+              "type": "iron",
+              "energy": 1355.21
+            },
+            {
+              "type": "hemo",
+              "energy": 378.46
+            },
+            {
+              "type": "globulines",
+              "energy": 559.93
+            },
+            {
+              "type": "beta-barrel",
+              "energy": 1239.83
+            }
+          ],
+          "energyIncrease": 878.88,
+          "numComponents": 13,
+          "ph": 9.61,
+          "temp": 29.16,
+          "checkpoint": {
+            "chaperonine": true,
+            "HSP80": true,
+            "ubiquitination": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "order": "oncogenesis",
+      "detail": [
+        {
+          "proteinType": "inmunoglobulines",
+          "subcomponents": [
+            {
+              "type": "acid-aa",
+              "energy": 1127.5
+            },
+            {
+              "type": "alkaline-aa",
+              "energy": 1057.4
+            },
+            {
+              "type": "neutral-aa",
+              "energy": 585.89
+            },
+            {
+              "type": "beta-barril",
+              "energy": 1769.1
+            },
+            {
+              "type": "alfa-helix",
+              "energy": 862.61
+            }
+          ],
+          "energyIncrease": 1008.82,
+          "numComponents": 14,
+          "ph": 10.13,
+          "temp": 36.5,
+          "checkpoint": {
+            "chaperonine": false,
+            "HSP80": true,
+            "ubiquitination": false
+          }
+        },
+        {
+          "proteinType": "glutation-reductase",
+          "subcomponents": [
+            {
+              "type": "cysteine",
+              "energy": 1949.04
+            }
+          ],
+          "energyIncrease": 1020.57,
+          "numComponents": 426,
+          "ph": 9.21,
+          "temp": 76.84,
+          "checkpoint": {
+            "chaperonine": true,
+            "HSP80": true,
+            "ubiquitination": true
+          }
+        },
+        {
+          "proteinType": "histamines",
+          "subcomponents": [
+            {
+              "type": "aromatic-n-compound",
+              "energy": 1461.25
+            }
+          ],
+          "energyIncrease": 1153.93,
+          "numComponents": 1331,
+          "ph": 11.35,
+          "temp": 73.5,
+          "checkpoint": {
+            "chaperonine": false,
+            "HSP80": true,
+            "ubiquitination": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "order": "high-sugar-blood",
+      "detail": [
+        {
+          "proteinType": "insuline",
+          "subcomponents": [
+            {
+              "type": "acid-aa",
+              "energy": 1038.41
+            },
+            {
+              "type": "alkaline-aa",
+              "energy": 678.28
+            },
+            {
+              "type": "b-sheets",
+              "energy": 198.92
+            },
+            {
+              "type": "cyclic-aa",
+              "energy": 1697.53
+            }
+          ],
+          "energyIncrease": 673.15,
+          "numComponents": 2084,
+          "ph": 3.9,
+          "temp": 35.16,
+          "checkpoint": {
+            "chaperonine": true,
+            "HSP80": false,
+            "ubiquitination": false
+          }
+        }
+      ]
+    }
+  ]
+}

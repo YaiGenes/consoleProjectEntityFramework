@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "entityFrameworkTest": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\yaise\\source\\repos\\entityFrameworkTest\\entityFrameworkTest\\proteinSynthesis.json"
+    }
+  }
+}
