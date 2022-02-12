@@ -1,150 +1,150 @@
 {
 
-  "data": [
+  "Data": [
     {
-      "id": 1,
-      "order": "lowoxigen",
-      "detail": [
+      "Id": 1,
+      "Order": "low-oxigen",
+      "Detail": [
         {
-          "proteinType": "hemoglobuline",
-          "subcomponents": [
+          "ProteinType": "hemoglobuline",
+          "Subcomponents": [
             {
-              "type": "iron",
-              "energy": 1355.21
+              "Type": "iron",
+              "Energy": 1355.21
             },
             {
-              "type": "hemo",
-              "energy": 378.46
+              "Type": "hemo",
+              "Energy": 378.46
             },
             {
-              "type": "globulines",
-              "energy": 559.93
+              "Type": "globulines",
+              "Energy": 559.93
             },
             {
-              "type": "beta-barrel",
-              "energy": 1239.83
+              "Type": "beta-barrel",
+              "Energy": 1239.83
             }
           ],
-          "energyIncrease": 878.88,
-          "numComponents": 13,
-          "ph": 9.61,
-          "temp": 29.16,
-          "checkpoint": {
-            "chaperonine": true,
+          "EnergyIncrease": 878.88,
+          "NumComponents": 13,
+          "Ph": 9.61,
+          "Temp": 29.16,
+          "Checkpoint": {
+            "Chaperonine": true,
             "HSP80": true,
-            "ubiquitination": true
+            "Ubiquitination": true
           }
         }
       ]
     },
     {
-      "id": 2,
-      "order": "oncogenesis",
-      "detail": [
+      "Id": 2,
+      "Order": "oncogenesis",
+      "Detail": [
         {
-          "proteinType": "inmunoglobulines",
-          "subcomponents": [
+          "ProteinType": "inmunoglobulines",
+          "Subcomponents": [
             {
-              "type": "acid-aa",
-              "energy": 1127.5
+              "Type": "acid-aa",
+              "Energy": 1127.5
             },
             {
-              "type": "alkaline-aa",
-              "energy": 1057.4
+              "Type": "alkaline-aa",
+              "Energy": 1057.4
             },
             {
-              "type": "neutral-aa",
-              "energy": 585.89
+              "Type": "neutral-aa",
+              "Energy": 585.89
             },
             {
-              "type": "beta-barril",
-              "energy": 1769.1
+              "Type": "beta-barril",
+              "Energy": 1769.1
             },
             {
-              "type": "alfa-helix",
-              "energy": 862.61
+              "Type": "alfa-helix",
+              "Energy": 862.61
             }
           ],
-          "energyIncrease": 1008.82,
-          "numComponents": 14,
-          "ph": 10.13,
-          "temp": 36.5,
-          "checkpoint": {
-            "chaperonine": false,
+          "EnergyIncrease": 1008.82,
+          "NumComponents": 14,
+          "Ph": 10.13,
+          "Temp": 36.5,
+          "Checkpoint": {
+            "Chaperonine": false,
             "HSP80": true,
-            "ubiquitination": false
+            "Ubiquitination": false
           }
         },
         {
-          "proteinType": "glutation-reductase",
-          "subcomponents": [
+          "ProteinType": "glutation-reductase",
+          "Subcomponents": [
             {
-              "type": "cysteine",
-              "energy": 1949.04
+              "Type": "cysteine",
+              "Energy": 1949.04
             }
           ],
-          "energyIncrease": 1020.57,
-          "numComponents": 426,
-          "ph": 9.21,
-          "temp": 76.84,
-          "checkpoint": {
-            "chaperonine": true,
+          "EnergyIncrease": 1020.57,
+          "NumComponents": 426,
+          "Ph": 9.21,
+          "Temp": 76.84,
+          "Checkpoint": {
+            "Chaperonine": true,
             "HSP80": true,
-            "ubiquitination": true
+            "Ubiquitination": true
           }
         },
         {
-          "proteinType": "histamines",
-          "subcomponents": [
+          "ProteinType": "histamines",
+          "Subcomponents": [
             {
-              "type": "aromatic-n-compound",
-              "energy": 1461.25
+              "Type": "aromatic-n-compound",
+              "Energy": 1461.25
             }
           ],
-          "energyIncrease": 1153.93,
-          "numComponents": 1331,
-          "ph": 11.35,
-          "temp": 73.5,
-          "checkpoint": {
-            "chaperonine": false,
+          "EnergyIncrease": 1153.93,
+          "NumComponents": 1331,
+          "Ph": 11.35,
+          "Temp": 73.5,
+          "Checkpoint": {
+            "Chaperonine": false,
             "HSP80": true,
-            "ubiquitination": true
+            "Ubiquitination": true
           }
         }
       ]
     },
     {
-      "id": 3,
-      "order": "high-sugar-blood",
-      "detail": [
+      "Id": 3,
+      "Order": "high-sugar-blood",
+      "Detail": [
         {
-          "proteinType": "insuline",
-          "subcomponents": [
+          "ProteinType": "insuline",
+          "Subcomponents": [
             {
-              "type": "acid-aa",
-              "energy": 1038.41
+              "Type": "acid-aa",
+              "Energy": 1038.41
             },
             {
-              "type": "alkaline-aa",
-              "energy": 678.28
+              "Type": "alkaline-aa",
+              "Energy": 678.28
             },
             {
-              "type": "b-sheets",
-              "energy": 198.92
+              "Type": "b-sheets",
+              "Energy": 198.92
             },
             {
-              "type": "cyclic-aa",
-              "energy": 1697.53
+              "Type": "cyclic-aa",
+              "Energy": 1697.53
             }
           ],
-          "energyIncrease": 673.15,
-          "numComponents": 2084,
-          "ph": 3.9,
-          "temp": 35.16,
-          "checkpoint": {
-            "chaperonine": true,
+          "EnergyIncrease": 673.15,
+          "NumComponents": 2084,
+          "Ph": 3.9,
+          "Temp": 35.16,
+          "Checkpoint": {
+            "Chaperonine": true,
             "HSP80": false,
-            "ubiquitination": false
+            "Ubiquitination": false
           }
         }
       ]

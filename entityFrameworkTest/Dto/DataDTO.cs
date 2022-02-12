@@ -8,6 +8,6 @@ namespace entityFrameworkTest.Dto
 {
     public class DataDTO
     {
-        public IEnumerable<GolgiComplexDto> data { get; set; }
+        public IEnumerable<GolgiComplexDto> Data { get; set; }
     }
 }

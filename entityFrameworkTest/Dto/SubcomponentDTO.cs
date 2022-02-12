@@ -8,7 +8,7 @@ namespace entityFrameworkTest.Dto
 {
     public class SubcomponentDTO
     {
-        public string type { get; set; }
-        public double energy { get; set; }
+        public string Type { get; set; }
+        public double Energy { get; set; }
     }
 }

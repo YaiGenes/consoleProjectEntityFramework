@@ -8,12 +8,12 @@ namespace entityFrameworkTest.Dto
 {
         public class MolecularComponentsDTO
         {
-            public string proteinType { get; set; }
-            public List<SubcomponentDTO> subcomponents { get; set; }
-            public double energyIncrease { get; set; }
-            public int numComponents { get; set; }
-            public double ph { get; set; }
-            public double temp { get; set; }
-            public CheckpointDTO checkpoint { get; set; }
+            public string ProteinType { get; set; }
+            public List<SubcomponentDTO> Subcomponents { get; set; }
+            public double EnergyIncrease { get; set; }
+            public int NumComponents { get; set; }
+            public double Ph { get; set; }
+            public double Temp { get; set; }
+            public CheckpointDTO Checkpoint { get; set; }
     }
 }

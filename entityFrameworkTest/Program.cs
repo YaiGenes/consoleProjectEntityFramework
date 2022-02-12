@@ -7,7 +7,6 @@ using System.Linq;
 using System.IO;
 using System.Threading.Tasks;
 using entityFrameworkTest.Dto;
-//using System.Text.Json;
 using Newtonsoft.Json;
 using System.Net;
 
@@ -23,15 +22,13 @@ namespace entityFrameworkTest
             var stringJson = webClient.DownloadString(jsonOrder);
             DataDTO myDeserializedClass = JsonConvert.DeserializeObject<DataDTO>(stringJson);
 
-            //GolgiComplexDto myDeserializedClass = JsonSerializer.Deserialize<GolgiComplexDto>(File.ReadAllText(jsonOrder));
-
-            myDeserializedClass.data.ToList().ForEach(ar => 
+            myDeserializedClass.Data.ToList().ForEach(ar => 
             { 
-                ar.detail.ToList().ForEach(li=> 
+                ar.Detail.ToList().ForEach(li=> 
                 {
-                    li.subcomponents.ToList().ForEach(sub =>
+                    li.Subcomponents.ToList().ForEach(sub =>
                     {
-                        Console.WriteLine(sub.type);
+                        Console.WriteLine(sub.Type);
                     }); 
                 }); 
             });

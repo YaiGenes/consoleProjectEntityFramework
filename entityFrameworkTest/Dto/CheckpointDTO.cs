@@ -8,8 +8,8 @@ namespace entityFrameworkTest.Dto
 {
     public class CheckpointDTO
     {
-        public bool chaperonine { get; set; }
+        public bool Chaperonine { get; set; }
         public bool HSP80 { get; set; }
-        public bool ubiquitination { get; set; }
+        public bool Ubiquitination { get; set; }
     }
 }
