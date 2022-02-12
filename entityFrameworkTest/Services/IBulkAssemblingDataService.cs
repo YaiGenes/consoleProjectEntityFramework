@@ -5,7 +5,6 @@ namespace entityFrameworkTest.Services
 {
     public interface IBulkAssemblingDataService
     {
-        Task<SynthesisResult> BulkAssemblingData(BulkAssemblingDataService assembling);
-        //Task BulkAssemblingData(Assembling result);
+        Task<SynthesisResult> BulkAssemblingData(Assembling assembling);
     }
 }

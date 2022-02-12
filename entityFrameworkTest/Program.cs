@@ -19,7 +19,7 @@ namespace entityFrameworkTest
 
             var host = CreateHostBuilder(args).Build();
 
-            var processor = host.Services.GetRequiredService<Services.IGolgiOrderProcessor>();
+            var processor = host.Services.GetRequiredService<IGolgiOrderProcessor>();
             var result = processor.Process(jsonOrder);
 
             if (result.HasError())
@@ -52,7 +52,7 @@ namespace entityFrameworkTest
                         .ConfigureServices((hostContext, services) =>
                         {
                             services.AddAutoMapper(typeof(Program));
-                            //services.AddApplicationServices(hostContext.Configuration);
+                            services.AddApplicationServices(hostContext.Configuration);
                         })
                         .ConfigureLogging((hostContext, logging) =>
                         {

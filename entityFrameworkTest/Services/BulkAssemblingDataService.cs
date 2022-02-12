@@ -10,50 +10,52 @@ namespace entityFrameworkTest.Services
 {
     public class BulkAssemblingDataService : IBulkAssemblingDataService
     {
-        private readonly IAssemblyRepository _packageRepository;
+        private readonly IAssemblingRepository _assemblingRepository;
 
-        public BulkAssemblingDataService(IAssemblyRepository packageRepository)
+        public BulkAssemblingDataService(IAssemblingRepository assemblingRepository)
         {
-            _packageRepository = packageRepository;
+            _assemblingRepository = assemblingRepository;
         }
 
-        public async Task<SynthesisResult> BulkPackageData(Assembly package)
+        public async Task<SynthesisResult> BulkAssemblingData(Assembling assembling)
         {
-            var packageEntity = MapPackage(package);
+            var assemblingEntity = MapAssambling(assembling);
 
-            _packageRepository.Add(packageEntity);
+            _assemblingRepository.Add(assemblingEntity);
 
-            await _packageRepository.SaveChanges();
+            await _assemblingRepository.SaveChanges();
 
             return new SynthesisResult();
         }
 
-        private AssemblyEntity MapPackage(Assembly package)
+        private AssemblingEntity MapAssambling(Assembling assembling)
         {
-            AssemblyEntity packageEntity = new AssemblyEntity()
+            AssemblingEntity assemblingEntity = new AssemblingEntity()
             {
                 Id = Guid.NewGuid(),
-                OrderCode = package.OrderCode,
-                Components = package.Components
+                OrderCode = assembling.Order,
+                Component = assembling.Components
                                     .Select(c =>
                                         new ComponentEntity
                                         {
-                                            Brand = c.Brand,
-                                            Color = c.Color,
+                                            ph = c.Ph,
+                                            Temp = c.Temp,
                                             Id = Guid.NewGuid(),
-                                            IsPolished = c.IsPolished,
+                                            HSP80 = c.HSP80,
+                                            Chaperonine = c.Chaperonine,
+                                            Ubiquitination = c.Ubiquitination,
                                             Number = c.NumComponents,
-                                            Type = c.ComponentType,
+                                            Type = c.ProteinType,
                                             Subcomponents = c.Subcomponents.Select(r => new SubcomponentEntity
                                             {
                                                 Id = Guid.NewGuid(),
-                                                Price = (decimal)r.Price,
+                                                EnergyCost = (decimal)r.Energy,
                                                 Type = r.Type
                                             }).ToList()
                                         }).ToList()
             };
 
-            return packageEntity;
+            return assemblingEntity;
         }
     }
 }
