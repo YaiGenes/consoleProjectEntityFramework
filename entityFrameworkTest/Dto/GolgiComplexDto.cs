@@ -11,5 +11,10 @@ namespace entityFrameworkTest.Dto
         public int Id { get; set; }
         public string Order { get; set; }
         public List<MolecularComponentsDTO> Detail { get; set; }
+
+        public static explicit operator GolgiComplexDto(DataDTO v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
