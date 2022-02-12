@@ -24,7 +24,7 @@ namespace entityFrameworkTest.Services.Handlers
             return _canHandle(entity);
         }
 
-        public void Handle(T entity)
+        void IHandler<T>.Handle(T entity)
         {
             if(CanHandle(entity))
             {

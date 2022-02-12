@@ -41,7 +41,7 @@ namespace entityFrameworkTest.Services.Builders
         {
             if (_component.Temp == temp)
             {
-            return true;
+                return true;
             }
             return false;
         }
@@ -56,7 +56,7 @@ namespace entityFrameworkTest.Services.Builders
         }
 
         //ph and temp checks the state of naturalization of protein, if the get it value is different there will be assembling issues
-        
+
         public Component Build()
         {
             return _component;
