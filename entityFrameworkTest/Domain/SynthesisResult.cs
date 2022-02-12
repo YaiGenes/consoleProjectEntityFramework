@@ -24,7 +24,7 @@ namespace entityFrameworkTest.Domain
 
         public void AddError(int code, string message, Exception exception = null)
         {
-            Errors.Add(new ErrorObject { Code = code, Message = message, Exception = exception})
+            Errors.Add(new ErrorObject { Code = code, Message = message, Exception = exception });
         }
         public void AddError(Exception exception)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Domain
 {
-    public class ErrorCell
+    public class ErrorObject
     {
         public int Code { get; set; }
         public string Message { get; set; }
