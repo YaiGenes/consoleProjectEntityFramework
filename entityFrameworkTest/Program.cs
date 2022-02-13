@@ -6,6 +6,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using entityFrameworkTest.Services;
+using entityFrameworkTest.Extensions;
 
 namespace entityFrameworkTest
 {
@@ -14,8 +15,6 @@ namespace entityFrameworkTest
         static async Task Main(string[] args)
         {
             string jsonOrder = args[0];
-
-
 
             var host = CreateHostBuilder(args).Build();
 

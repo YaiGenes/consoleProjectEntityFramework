@@ -9,8 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Services
 {
@@ -77,7 +75,7 @@ namespace entityFrameworkTest.Services
             
             foreach (var validationContext in validationContexts)
             {
-                var filteredValidations = validations.Where(c => validationContext.Component.Tests.Contains(c.TestName)); //filtrado de validaciones
+                var filteredValidations = validations.Where(c => validationContext.Component.Chaperonine.Equals(false) || validationContext.Component.HSP80.Equals(false) || validationContext.Component.Ubiquitination.Equals(false)); //filtrado de validaciones
 
                 foreach (var validation in filteredValidations)
                 {
@@ -106,8 +104,8 @@ namespace entityFrameworkTest.Services
         {
             var webClient = new WebClient();
             var stringJson = webClient.DownloadString(jsonFile);
-            DataDTO myDeserializedClass = JsonConvert.DeserializeObject<DataDTO>(stringJson);
-            return (GolgiComplexDto)myDeserializedClass.Data;
+            GolgiComplexDto myDeserializedClass = JsonConvert.DeserializeObject<GolgiComplexDto>(stringJson);
+            return myDeserializedClass;
         }
     }
 }

@@ -17,6 +17,7 @@
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
           "Microsoft.Extensions.Hosting.Systemd": "6.0.0",
           "Microsoft.Extensions.Hosting.WindowsServices": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {

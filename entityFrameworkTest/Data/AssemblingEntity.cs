@@ -3,9 +3,9 @@ using System;
 
 namespace entityFrameworkTest.Data
 {
-    public class SynthesisEntity
+    public class AssemblingEntity
     {
-        public SynthesisEntity()
+        public AssemblingEntity()
         {
             Components = new HashSet<ComponentEntity>();
         }
@@ -15,5 +15,4 @@ namespace entityFrameworkTest.Data
 
         public virtual ICollection<ComponentEntity> Components { get; set; }
     }
-}
 }

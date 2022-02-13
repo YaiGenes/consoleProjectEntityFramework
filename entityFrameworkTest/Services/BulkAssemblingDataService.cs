@@ -1,4 +1,6 @@
-﻿using entityFrameworkTest.Domain;
+﻿using entityFrameworkTest.Data;
+using entityFrameworkTest.Data.Repositories;
+using entityFrameworkTest.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,23 +35,24 @@ namespace entityFrameworkTest.Services
             AssemblingEntity assemblingEntity = new AssemblingEntity()
             {
                 Id = Guid.NewGuid(),
-                OrderCode = assembling.Order,
-                Component = assembling.Components
+                Order = assembling.Order,
+                Components = assembling.Components
                                     .Select(c =>
                                         new ComponentEntity
                                         {
-                                            ph = c.Ph,
+                                            Ph = c.Ph,
                                             Temp = c.Temp,
                                             Id = Guid.NewGuid(),
                                             HSP80 = c.HSP80,
                                             Chaperonine = c.Chaperonine,
+                                            EnergyIncrease = c.EnergyIncrease,
                                             Ubiquitination = c.Ubiquitination,
-                                            Number = c.NumComponents,
-                                            Type = c.ProteinType,
+                                            NumComponents = c.NumComponents,
+                                            ProteinType = c.ProteinType,
                                             Subcomponents = c.Subcomponents.Select(r => new SubcomponentEntity
                                             {
                                                 Id = Guid.NewGuid(),
-                                                EnergyCost = (decimal)r.Energy,
+                                                Energy = (decimal)r.Energy,
                                                 Type = r.Type
                                             }).ToList()
                                         }).ToList()

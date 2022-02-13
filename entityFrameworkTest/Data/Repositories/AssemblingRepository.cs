@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Data.Repositories
 {
-    public class SubComponentRepository : BaseRepository<GolgiDbContext, SubcomponentEntity, Guid>, ISubComponentRepository
+    public class AssemblingRepository : BaseRepository<GolgiDbContext, AssemblingEntity, Guid>, IAssemblingRepository
     {
-        public SubComponentRepository(GolgiDbContext context) : base(context)
+        public AssemblingRepository(GolgiDbContext context) : base(context)
         {
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Data.Repositories
 {
-    internal interface ISynthesisRepository : IRepository<SynthesisEntity, Guid>
+    public interface IAssemblingRepository : IRepository<AssemblingEntity, Guid>
     {
     }
 }
