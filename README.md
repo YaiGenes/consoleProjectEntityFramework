@@ -7,3 +7,4 @@ EntityFramework
 Json deserializer
 
 ## DIAGRAM
+![DiagramEntityFrameworkI](https://user-images.githubusercontent.com/80582545/153785974-3360220c-c6f5-47f3-b603-2c402cc5c599.jpg)
