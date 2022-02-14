@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "people": "Server=localhost\\SQLEXPRESS;Integrated Security=true;Database=proteinsynthesis;MultipleActiveResultSets=true"
+  }
+}

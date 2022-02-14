@@ -27,7 +27,7 @@ namespace entityFrameworkTest
             }
             else
             {
-                Console.WriteLine($"The mean yield to produce {result.Result.Order} is {result.Result.GetMeanYield()}");
+                Console.WriteLine($"The mean yield to produce {result.Result.Order} is {string.Format("{0:0.00}", result.Result.GetMeanYield())}%");
 
                 await using (var scope = host.Services.CreateAsyncScope())
                 {

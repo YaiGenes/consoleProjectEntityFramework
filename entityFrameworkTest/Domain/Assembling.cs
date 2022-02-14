@@ -17,7 +17,8 @@ namespace entityFrameworkTest.Domain
         }
         public double GetMeanYield()
         {
-            return Components.Sum(comp => comp.GetYield() * 1/comp.NumComponents) * 100;
+            var addition = Components.Sum(comp => comp.GetYield())/Components.Count;
+            return addition * 100;
         }
     }
 }

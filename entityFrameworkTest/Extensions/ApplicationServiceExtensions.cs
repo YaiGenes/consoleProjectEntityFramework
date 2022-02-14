@@ -25,7 +25,7 @@ namespace entityFrameworkTest.Extensions
 
             services.AddSingleton<IHandler<ComponentContext>>(c =>
             {
-                var types = new string[] { "hemoglobine", "Pistón", "Biela", "Cigüenal", "Embrague", "Cartel" };
+                var types = new string[] { "hemoglobine" };
 
                 Action<ComponentContext> action = (context) => context.Component.Ph = context.Ph;
                 Handle<ComponentContext> prevHandler = null;
@@ -41,6 +41,7 @@ namespace entityFrameworkTest.Extensions
             services.AddDbContextPool<GolgiDbContext>((provider, builder) =>
             {
                 builder.UseQueryTrackingBehavior(QueryTrackingBehavior.TrackAll);
+                //builder.UseInMemoryDatabase("proteinsynthesis");
                 builder.UseSqlServer(configuration.GetConnectionString("people"));
             });
 

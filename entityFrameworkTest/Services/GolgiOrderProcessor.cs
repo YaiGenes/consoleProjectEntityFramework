@@ -4,11 +4,13 @@ using entityFrameworkTest.Services.Builders;
 using entityFrameworkTest.Services.Handlers;
 using entityFrameworkTest.Services.Validations;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text.Json;
 
 namespace entityFrameworkTest.Services
 {
@@ -102,10 +104,7 @@ namespace entityFrameworkTest.Services
 
         private GolgiComplexDto GetOrderData(string jsonFile)
         {
-            var webClient = new WebClient();
-            var stringJson = webClient.DownloadString(jsonFile);
-            GolgiComplexDto myDeserializedClass = JsonConvert.DeserializeObject<GolgiComplexDto>(stringJson);
-            return myDeserializedClass;
+            return JsonSerializer.Deserialize<GolgiComplexDto>(File.ReadAllText(jsonFile));
         }
     }
 }
