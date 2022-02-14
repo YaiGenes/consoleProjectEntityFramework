@@ -4,12 +4,10 @@ using entityFrameworkTest.Services.Builders;
 using entityFrameworkTest.Services.Handlers;
 using entityFrameworkTest.Services.Validations;
 using Microsoft.Extensions.Logging;
-//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Text.Json;
 
 namespace entityFrameworkTest.Services

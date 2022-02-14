@@ -7,10 +7,6 @@ using entityFrameworkTest.Services.Validations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Extensions
 {
@@ -28,11 +24,11 @@ namespace entityFrameworkTest.Extensions
                 var types = new string[] { "hemoglobine" };
 
                 Action<ComponentContext> action = (context) => context.Component.Ph = context.Ph;
-                Handle<ComponentContext> prevHandler = null;
+                Handler<ComponentContext> prevHandler = null;
 
                 foreach (var type in types)
                 {
-                    prevHandler = new Handle<ComponentContext>(x => x.Component.ProteinType == type, action, prevHandler);
+                    prevHandler = new Handler<ComponentContext>(x => x.Component.ProteinType == type, action, prevHandler);
                 }
 
                 return prevHandler;
