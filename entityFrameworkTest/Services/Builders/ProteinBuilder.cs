@@ -1,10 +1,6 @@
 ﻿using entityFrameworkTest.Domain;
 using entityFrameworkTest.Dto;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace entityFrameworkTest.Services.Builders
 {
@@ -37,18 +33,15 @@ namespace entityFrameworkTest.Services.Builders
             _component = component;
         }
 
+        public ProteinBuilder AddTermicProtection() 
+        {
+            _component.HSP80 = true;
+            return this;
+        }
+
         public bool CheckTemp(double temp)
         {
             if (_component.Temp == temp)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public bool CheckPh(double ph)
-        {
-            if (_component.Ph == ph)
             {
                 return true;
             }

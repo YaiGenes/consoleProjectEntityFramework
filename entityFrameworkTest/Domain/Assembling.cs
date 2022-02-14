@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace entityFrameworkTest.Domain
 {
@@ -17,7 +15,8 @@ namespace entityFrameworkTest.Domain
         }
         public double GetMeanYield()
         {
-            return Components.Sum(comp => comp.GetYield() * 1/comp.NumComponents) * 100;
+            var addition = Components.Sum(comp => comp.GetYield())/Components.Count;
+            return addition * 100;
         }
     }
 }
